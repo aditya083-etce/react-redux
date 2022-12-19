@@ -6,7 +6,7 @@ const initalState = {
     error: ''
 }
 
-const userReducer = (state, action) => {
+const userReducer = (state = initalState, action) => {
     switch(action.type) {
         case FETCH_USERS_REQUEST: return {
             ...state,
